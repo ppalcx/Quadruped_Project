@@ -459,6 +459,6 @@ class Stoch2Env(gym.Env):
 
 if(__name__ == "__main__"):
     env = Stoch2Env(render=True, stairs = False, on_rack=True)
+    env.reset()
     for i in range(200000):
-    	env.reset()
     	env._pybullet_client.stepSimulation()
